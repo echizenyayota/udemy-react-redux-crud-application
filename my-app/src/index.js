@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import { createStore } from 'redux';
-import { configureStore } from '@reduxjs/toolkit';
+import { createStore } from 'redux';
+// import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
 
 import './index.css';
@@ -10,7 +10,7 @@ import App from './components/App';
 
 import reportWebVitals from './reportWebVitals';
 
-const store = configureStore(reducer);
+const store = createStore(reducer);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
